@@ -1,61 +1,160 @@
-# React and Redux
+<a name="readme-top"></a>
 
-If you are not familiar with linters and GitHub Actions, read [root level README](../README.md).
+<div align="center">
+  <h3><b>Hello React Front End</b></h3>
+</div>
 
-## Set-up GitHub Actions
+<!-- TABLE OF CONTENTS -->
 
-This GitHub Action is going to run [ESLint](https://eslint.org/) and [Stylelint](https://stylelint.io/) to help you find style issues.
+# 📗 Table of Contents
 
-[Stylelint](https://stylelint.io/) is a linter for your stylesheets that helps you avoid errors and enforce conventions.
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+- [Key Features](#key-features) 
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ](#faq)
+- [📝 License](#license)
 
-[ESLint](https://eslint.org/) is a tool for identifying and reporting on patterns found in ECMAScript/JavaScript code, with the goal of making code more consistent and avoiding bugs.
+<!-- PROJECT DESCRIPTION -->
 
-Please do the following **steps in this order**:
-
-1. In the first commit of your feature branch create a `.github/workflows` folder and add a copy of [`.github/workflows/linters.yml`](.github/workflows/linters.yml) to that folder.
-    - **Remember** to use the file linked above
-    - **Remember** that `.github` folder starts with a dot.
-2. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-    - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-3. When you open your first pull request you should see the result of the GitHub Actions:
-
-![gh actions checks](../assets/images/gh-actions-eslint-stylelint-checks.png)
-
-Click on the `Details` link to see the full output and the errors that need to be fixed:
-import React from 'react';
-import { render } from '@testing-library/react';
-import CommunityCard from '../components/communityCard/communityCard';
-
-test('renders community card with title, icon, description, and features', () => {
-  const community = {
-    title: 'Community 1',
-    icon: '/path/to/icon.png',
-    description: 'A description of Community 1',
-    features: ['Feature 1', 'Feature 2', 'Feature 3'],
-  };
-
-  const { getByText } = render(<CommunityCard community={community} />);
-
-  expect(getByText('Community 1')).toBeInTheDocument();
-  expect(getByText('A description of Community 1')).toBeInTheDocument();
-  expect(getByText('Feature 1')).toBeInTheDocument();
-  expect(getByText('Feature 2')).toBeInTheDocument();
-  expect(getByText('Feature 3')).toBeInTheDocument();
-  expect(getByText('Get Started')).toBeInTheDocument();
-});
+# Hello React Front End <a name="about-project"></a>
 
 
-   *not sure how to use npm? Read [this](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).*
+**Hello React Front End** is a react application which displays a random greeting from a rails api.
 
-2. Copy [.stylelintrc.json](./.stylelintrc.json) to the root directory of your project.
-3. **Do not make any changes in config files - they represent style guidelines that you share with your team - which is a group of all Microverse students.**
-   - If you think that change is necessary - open a [Pull Request in this repository](../README.md#contributing) and let your code reviewer know about it.
-4. Run `npx stylelint "**/*.{css,scss}"` on the root of your directory of your project.
-5. Fix linter errors.
-6. **IMPORTANT NOTE**: feel free to research [auto-correct options for Stylelint](https://stylelint.io/user-guide/cli#autofixing-errors) if you get a flood of errors but keep in mind that correcting style errors manually will help you to make a habit of writing a clean code!
 
-## Test/Deployment Actions
 
-Feel free to add your own deployment actions which can run your tests and deploy to Heroku.
+## 🛠 Built With <a name="built-with"></a>
 
-Make sure that you do not modify the [`.github/workflows/linters.yml`](.github/workflows/linters.yml) but that you create a separe GitHub Action workflow file for that.
+### Tech Stack <a name="tech-stack"></a>
+
+<details>
+  <summary>Server</summary>
+  <ul>
+    <li><a href="https://www.ruby-lang.org/en/">React</a></li>
+    <li><a href="https://www.ruby-lang.org/en/">Link to the backend repository</a></li>
+  </ul>
+</details>
+
+<p align="right"><a href="#readme-top">back to top</a></p>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Key Features -->
+
+## Key Features <a name="key-features"></a>
+
+> Key Features of Project.
+- Display greetings from a backend rails api
+
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
+
+### Prerequisites
+
+In order to run this project you need:
+
+- The server from the rails app
+
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```sh
+  cd desired/folder
+  git clone git@github.com:KareemWilson/hello-react-front-end.git
+```
+
+### Install
+
+Install this project with:
+
+- After cloning type 'cd hello-react-front-end'.
+- Run 'npm install' to install all the required dependencies.
+### Usage
+
+To run the project, execute the following command:
+- Don't forget to run the back end first 
+- Run npm start
+
+<p align="right"><a href="#readme-top">back to top</a></p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Kareem Magdy Wilson**
+
+- GitHub: [@KareemWilson](https://github.com/KareemWilson)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/kareem-wilson)
+
+<p align="right"><a href="#readme-top">back to top</a></p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+> Features to add to the project.
+- [ ] **[ Style the home page ]**
+
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+Feel free to check the [issues page](../../issues/).
+
+<p align="right"><a href="#readme-top">back to top</a></p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you like this project...
+
+<p align="right"><a href="#readme-top">back to top</a></p>
+
+## Acknowledgments
+
+I would like to thank Microverse and all our colleagures there.
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+- **Do I have to have any previous knowledge about ruby to use this project?**
+
+  - No!
+
+- **How to use this project?**
+
+  - check the [Getting Started](#getting-started) section to have a complete guid on how to setup and run teh project.
+
+<p align="right"><a href="#readme-top">back to top</a></p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+
+<p align="right"><a href="#readme-top">back to top</a></p>
